@@ -33,6 +33,7 @@ python3 preprocessing.py [path of images folder] [path to data_entry] [path to b
 
 # Citation
 
+```
 @InProceedings{Han_2022_WACV,
     author    = {Han, Yan and Chen, Chongyan and Tewfik, Ahmed and Glicksberg, Benjamin and Ding, Ying and Peng, Yifan and Wang, Zhangyang},
     title     = {Knowledge-Augmented Contrastive Learning for Abnormality Classification and Localization in Chest X-Rays With Radiomics Using a Feedback Loop},
@@ -48,3 +49,4 @@ python3 preprocessing.py [path of images folder] [path to data_entry] [path to b
   journal={arXiv preprint arXiv:2207.04394},
   year={2022}
 }
+```
