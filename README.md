@@ -12,7 +12,11 @@ Accurate classification and localization of abnormalities in chest X-rays play a
 
 ![CNN-Based Framework](./figures/WACV.png)
 
+CNN-Based Framework.
+
 ![ViT-Based Framework](./figures/TMI.png)
+
+ViT-Based Framework.
 
 # Data
 The NIH-CXR8 dataset can be downloaded from their offical webset: https://nihcc.app.box.com/v/ChestXray-NIHCC/folder/36938765345
