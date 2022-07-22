@@ -9,15 +9,11 @@ Offical Implementation for Papers https://openaccess.thecvf.com/content/WACV2022
 Accurate classification and localization of abnormalities in chest X-rays play an inportant role in clinical diagnosis and treatment planning. Building a highly accurate predictive model of these tasks usually requires a large number of manually annotated labels and pixel regions (bounding boxes) of abnormalitites. However, it is expensive to acquire such annotations, especially the bounding boxes. Before the recent success of deep learning methods for automated chest X-rays analysis, practitioners used handcrafted radiomic features to quantitatively describe local patches of chest X-rays. However, extracting discriminative radiomic features also relies on accurate pathology localization. Hence we will run into an intriguing "chicken-and-egg" problem. Here, we utilize the contrastive learning in the chest X-ray domain to solve this problem, the key knob of our framework is a unique positive sampling approach tailored for the chest X-rays, by seamlessly intergrating radiomic features as a knowledge augmentation. Specifically, we first apply an image encoder (ViT or CNN-based models) to classify the chest X-rays and to generate the image features. We next leverage Grad-CAM or Self-Attention maps to highlight the crucial (abnormal) regions for chest X-rays, from which we extract radiomic features. The radiomic features are then passed through another dedicated encoder to act as the positive sample for the image features generated from the same chest X-ray. In this way, our framework constitutes a feedback loop for image and radiomic features to mutually reinforce each other.
 
 # Framework
-<p align="center">
 ![CNN-Based Framework](./figures/WACV.png)
-</p>
 
 <h1 align="center">CNN-Based Framework.</h1>
 
-<p align="center">
 ![ViT-Based Framework](./figures/TMI.png)
-</p>
 
 <h1 align="center">ViT-Based Framework.</h1>
 
