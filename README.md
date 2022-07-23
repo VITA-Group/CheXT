@@ -22,23 +22,27 @@ The NIH-CXR8 dataset can be downloaded from their offical webset: https://nihcc.
 
 # Environment
 
-1. We recommend you to create a virtual environment.
+We recommend you to create a virtual environment.
 ```
-conda create -n chext python=3.7
-conda activate chext
+conda env create -f environment.yml
+conda activate <myenv>
 ```
+The first line of the yml file sets the new environment's name, it can be changed manually to any name.
 
-2. Data Preprocessing
+# Data Preprocessing
 ```
 python3 preprocessing.py [path of images folder] [path to data_entry] [path to bbox_list_path] [path to train_txt] [path to valid_txt] [path of preprocessed output (folder)]
 ```
 
+# Training
+```
+python3 main.py --pretrained --batch_size 64 --epochs 20 --model densenet121
+```
 
-# Scripts
-
-# Disease Classification
-
-# Disease Localization
+# Local Testing
+```
+python3 denseNet_localization.py [path to test.txt] [path of images folder]
+```
 
 # Citation
 
