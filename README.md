@@ -1,4 +1,4 @@
-# chext
+# CheXT
 
 Under Development
 
